@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:provider/provider.dart';
 import 'package:ramo_photo_editor/helpers/api_manager.dart';
+import 'package:ramo_photo_editor/helpers/localization_helper.dart';
 import '../providers/draft_provider.dart';
 import 'package:ramo_photo_editor/constants/app_colors.dart';
 
@@ -28,7 +29,7 @@ class _BackgroundRemovalScreenState extends State<BackgroundRemovalScreen> {
     final imagePath = draftProvider.currentDraft?.imagePath;
 
     if (imagePath == null || draftProvider.currentDraft?.imageData == null) {
-      _showError(context, 'No image available to process.');
+      _showError(context, AppLocalizations.of(context)!.translate('No image available to process.'));
       return;
     }
 
@@ -159,7 +160,7 @@ class _BackgroundRemovalScreenState extends State<BackgroundRemovalScreen> {
                     if (!_isLoading) _removeBackground(context);
                   }),
                 if (imageData.isNotEmpty)
-                  _bottomNavItem('Save', Icons.save, () {
+                  _bottomNavItem('save', Icons.save, () {
                     _convertWidgetToImage(context);
                   }),
               ],
@@ -183,11 +184,11 @@ class _BackgroundRemovalScreenState extends State<BackgroundRemovalScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(icon, color: Colors.white),
+            Icon(icon, color: AppColors.mintGreen),
             const SizedBox(height: 4.0),
             Text(
-              label,
-              style: const TextStyle(color: Colors.white, fontSize: 12),
+              AppLocalizations.of(context)!.translate(label),
+              style:  AppTextStyles.normalTextStyle.copyWith(color: AppColors.mintGreen,),
             ),
           ],
         ),

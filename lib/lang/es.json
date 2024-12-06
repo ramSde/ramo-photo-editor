@@ -32,12 +32,15 @@
   "Blur": "Difuminar",
   "Texture": "Textura",
   "Aspect Ratio": "Relación de aspecto",
-  "Select":"Seleccionar",
+  "Select": "Seleccionar",
   "Sticker": "Etiqueta engomada",
   "Pick Color": "Elegir color",
-  "no image":"No se encontró ninguna imagen",
-  "enter emoji":"Introduce emojis",
-  "Remove Background": "Quitar fondo"
-
+  "no image": "No se encontró ninguna imagen",
+  "enter emoji": "Introduce emojis",
+  "Remove Background": "Quitar fondo",
+  "Failed to save the image.": "No se pudo guardar la imagen.",
+  "No image available to process.": "No hay imagen disponible para procesar.",
+  "Failed to process the image.": "No se pudo procesar la imagen.",
+  "Error occurred:": "Se produjo un error:"
 }
   

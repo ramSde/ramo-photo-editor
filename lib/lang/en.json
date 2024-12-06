@@ -36,7 +36,11 @@
   "Sticker": "Sticker",
   "Pick Color": "Pick Color",
   "no image": "No image found",
-  "enter emoji" :"Enter emoji",
-  "Remove Background": "Remove Background"
+  "enter emoji": "Enter emoji",
+  "Remove Background": "Remove Background",
+  "Failed to save the image.": "Failed to save the image.",
+  "No image available to process.": "No image available to process.",
+  "Failed to process the image.": "Failed to process the image.",
+  "Error occurred:": "Error occurred:"
 }
   
